@@ -12,7 +12,7 @@ function fixCallbacks(settings) {
     }
     return settings;
 }
-if (!tinyMCE.get(id))
+if (!tinyMCE.get(id)) {
     settings.selector = "#" + id;
     tinymce.init(fixCallbacks(settings));
 }
